@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title %} deneme {% endblock%}</title>
+    {% block head %}{% include('home/head.html.twig') %}{% endblock %}
+</head>
+ <body>
+  
+  
+  <div id="templatemo_wrapper">
+ 
+  {% block login %}{% include('home/login.html.twig') %} {% endblock%}
+  
+   {% block body %}{% endblock%}
+
+  </div> <!-- end of wrapper -->
+
+
+ {% block footer %}{% include('home/footer.html.twig') %}{% endblock %}
+ </body>
+</html>
